@@ -1,5 +1,6 @@
 body{
-    background-image: url("../../img/orange2.jpg") ;
+   // background-image: url("../../img/mountain.jpg") ;
+   background-color: grey;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -12,14 +13,18 @@ body{
     height: 10%;
     width: 60%;
     margin: auto;
-    background-color: white;
+   // background-image: url("../../img/orange3.jpg");
+   background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
 
     .title{
         height: 50%;
         width: 100%;
-        color: rgb(255, 124, 49);
+        color: rgb(255, 255, 255);
         display: flex;
         justify-content: center;
         text-align: center;
@@ -37,14 +42,22 @@ body{
 }
     .slide1{
         background-image:url("../../img/food1.jpg");
-    
+        background-repeat: no-repeat;
+        background-size: cover;
+        
     }
     .slide2{
         background-image:url("../../img/food2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
         background-position: center;
+       
     }
     .slide3{
         background-image:url("../../img/food3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        
     }
 
 .btn1{
@@ -55,8 +68,10 @@ body{
     color: white;
 }
 
-.midSection{
+.Panel{
     margin: auto;
+    margin-top: 3rem;
+    padding: 1rem;
     width: 60%;
     height: 50%;
     background-color: white;
@@ -67,11 +82,12 @@ body{
     justify-content: space-evenly;
     flex-wrap: wrap;
 
-    .midInfo{
-        width: 90%;
-        height: 25%;
+    .Info{
+        width: 50%;
+        height: 90%;
         margin-top: .5rem;
         padding: .25rem;
+        
          p{
            color: black;
            font-size: 1.5rem;
@@ -80,10 +96,13 @@ body{
  }
 
  .midInfoImg{
-    width: 90%;
-    height: 40%;
+    width: 50%;
+    height: 90%;
     padding: 1rem;
+    background-image: url("../../img/mobile.png");
     background-size: cover;
+    border-radius: 1rem;
+    
         p{
             color: black;
         }
