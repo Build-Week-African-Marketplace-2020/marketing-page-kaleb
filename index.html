@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+    <link rel="stylesheet" href="path/to/swiper.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+    <script src="path/to/swiper.min.js"></script>
+<div class=intro>
+    <div class=title>
+        <h1>African Marketplace</h1>
+    </div>
+</div>
+
+    <section class=topSection>
+        <div class=navWrapper>
+            <nav>
+                <a href=#>Home</a>
+                <a href=#>About Us</a>
+                <a href=#>Sign Up</a>
+                <a href=#>Log In</a>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Slider main container -->
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide slide1">Slide 1</div>
+        <div class="swiper-slide slide2">Slide 2</div>
+        <div class="swiper-slide slide3">Slide 3</div>
+        ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev btn1"></div>
+    <div class="swiper-button-next btn2"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+</div>
+    
+    <section class=midSection>
+        <div class=midInfo>
+            <p>Blah blah Blah blah Blah blah Blah blah</p>
+            <p>Blah blah Blah blah Blah blah Blah blah</p>
+        </div>
+        <div class="midInfoImg">
+            <img src="../../img/mobile.png">
+        </div>
+        <div class=midInfo>
+            <p>Blah blah Blah blah Blah blah Blah blah</p>
+            <p>Blah blah Blah blah Blah blah Blah blah</p>
+        </div>
+        <div class="midInfoImg">
+            <img src="../../img/mobile.png">
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <script>
+        var mySwiper = new Swiper ('.swiper-container', {
+            effect: 'coverflow',
+    speed: 2000,
+    grabCursor: true,
+    coverFlowEffect: {
+      rotate:30,
+      slideShadows: false,
+    },
+    autoplay: {
+    delay: 3000,
+    },
+    direction: 'horizontal',
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    }
+  })
+    </script>
+
+</body>
+</html>

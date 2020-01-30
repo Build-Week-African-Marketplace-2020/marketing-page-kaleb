@@ -1,0 +1,144 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Bebas Neue', cursive;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-family: 'Oswald', sans-serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+body,
+html {
+  height: 100%;
+  margin: 0px auto;
+  padding: 0px auto;
+}
+.navWrapper {
+  margin: auto;
+  width: 60%;
+  background-color: black;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navWrapper nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.navWrapper nav a {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  padding-bottom: 1%;
+  font-size: 1.5rem;
+}
+.navWrapper nav a:hover {
+  background-color: grey;
+  transition: background-color 1s;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+body {
+  background-image: url("../../img/orange2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+}
+.intro {
+  height: 10%;
+  width: 60%;
+  margin: auto;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+.intro .title {
+  height: 50%;
+  width: 100%;
+  color: #ff7c31;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.swiper-container {
+  width: 60%;
+  height: 40%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.slide1 {
+  background-image: url("../../img/food1.jpg");
+}
+.slide2 {
+  background-image: url("../../img/food2.jpg");
+  background-position: center;
+}
+.slide3 {
+  background-image: url("../../img/food3.jpg");
+}
+.btn1 {
+  color: white;
+}
+.btn2 {
+  color: white;
+}
+.midSection {
+  margin: auto;
+  width: 60%;
+  height: 50%;
+  background-color: white;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.midSection .midInfo {
+  width: 90%;
+  height: 25%;
+  margin-top: 0.5rem;
+  padding: 0.25rem;
+}
+.midSection .midInfo p {
+  color: black;
+  font-size: 1.5rem;
+}
+.midInfoImg {
+  width: 90%;
+  height: 40%;
+  padding: 1rem;
+  background-size: cover;
+}
+.midInfoImg p {
+  color: black;
+}
