@@ -1,6 +1,7 @@
 .titleAbout{
     width: 40%;
-   background-color: rgb(80, 80, 80);
+    background-color: black;
+    opacity: 0.8;
     border-radius: 1rem;
     margin: auto;
     display: flex;
@@ -29,7 +30,7 @@
            width: 30%;
            height: 30%;  
            border-radius: 1rem;
-           background-color: rgb(138, 45, 45);
+           background-color: rgb(54, 47, 44);
            border: 1px solid black;
            display: flex;
            flex-direction: column;
@@ -39,11 +40,13 @@
 
 
                .teamMember{
-                   width: 90%;
+                   width: 70%;
                    height: 60%;
                    background-color: black;
                    border-radius: 1rem;
-                   
+                   @media (max-width: 1000px) {
+                    width: 90%;
+                   }
 
        }
     }
@@ -52,52 +55,58 @@
 .git{
    font-size: 2rem;
    color: rgb(0, 0, 0);
-   border: 1px solid black;
+   border: 1px solid rgb(0, 0, 0);
    width: 50%;
    display: flex;
    justify-content: center;
    margin: .3rem;
    border-radius: 1rem;
+   border-bottom: 4px solid black;
 
        &:hover{
            background-color: rgb(255, 255, 255);
            transition: background-color 1s;
        }
 }
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
 
 
 .Me{
-   background-image: url("../../img/Me.jpg");
+  // background-image: url("../../img/Me.jpg");
    background-size: cover;
    background-position: center;
    margin: .5rem;
 }
 .Kirk{
-   background-image: url("../../img/Kirk.jpg");
+   //background-image: url("../../img/Kirk.jpg");
    background-size: cover;
    background-position: center;
    margin: .5rem;
 }
 .Ahmad{
-   background-image: url("../../img/Ahmad.jpg");
+  // background-image: url("../../img/Ahmad.jpg");
    background-size: cover;
    background-position: center;
    margin: .5rem;
 }
 .Leon{
-   background-image: url("../../img/Leon.jpg");
+   //background-image: url("../../img/Leon.jpg");
    background-size: cover;
    background-position: center;
    margin: .5rem;
 }
 .Reg{
-   background-image: url("../../img/Reg.png");
+   //background-image: url("../../img/Reg.png");
    background-size: cover;
    background-position: center;
    margin: .5rem;
 }
 .Aaron{
-   background-image: url("../../img/Aaron.jpg");
+   //background-image: url("../../img/Aaron.jpg");
    background-size: cover;
    background-position: center;
    margin: .5rem;
