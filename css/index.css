@@ -37,6 +37,12 @@ html {
   margin: 0px auto;
   padding: 0px auto;
 }
+h5 {
+  font-size: 1.5rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
 .navWrapper {
   margin: auto;
   width: 60%;
@@ -53,13 +59,13 @@ html {
   justify-content: space-evenly;
 }
 .navWrapper nav a {
-  width: 25%;
+  width: 100%;
   display: flex;
   justify-content: center;
   text-decoration: none;
   color: white;
   padding-bottom: 1%;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 .navWrapper nav a:hover {
   background-color: grey;
@@ -68,7 +74,7 @@ html {
   border-right: 1px solid white;
 }
 body {
-  background-color: grey;
+  background-image: url("../../img/Market2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -154,4 +160,96 @@ body {
 }
 .midInfoImg p {
   color: black;
+}
+.titleAbout {
+  width: 40%;
+  background-color: #505050;
+  border-radius: 1rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.titleAbout h1 {
+  color: white;
+}
+.teamWrapper {
+  padding: 1rem;
+  margin: auto;
+  margin-top: 2rem;
+  width: 100%;
+  height: 100rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.teamWrapper .teamMemberWrapper {
+  width: 30%;
+  height: 30%;
+  border-radius: 1rem;
+  background-color: #8a2d2d;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+}
+.teamWrapper .teamMemberWrapper .teamMember {
+  width: 90%;
+  height: 60%;
+  background-color: black;
+  border-radius: 1rem;
+}
+.git {
+  font-size: 2rem;
+  color: #000000;
+  border: 1px solid black;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin: 0.3rem;
+  border-radius: 1rem;
+}
+.git:hover {
+  background-color: #ffffff;
+  transition: background-color 1s;
+}
+.Me {
+  background-image: url("../../img/Me.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0.5rem;
+}
+.Kirk {
+  background-image: url("../../img/Kirk.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0.5rem;
+}
+.Ahmad {
+  background-image: url("../../img/Ahmad.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0.5rem;
+}
+.Leon {
+  background-image: url("../../img/Leon.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0.5rem;
+}
+.Reg {
+  background-image: url("../../img/Reg.png");
+  background-size: cover;
+  background-position: center;
+  margin: 0.5rem;
+}
+.Aaron {
+  background-image: url("../../img/Aaron.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0.5rem;
 }
