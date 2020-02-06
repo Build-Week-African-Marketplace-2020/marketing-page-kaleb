@@ -36,6 +36,16 @@
 
 <body id=navBoxBody>
 
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+      </div>
+    
+      <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
+
     <div class=mobileHead>
 
     </div>
@@ -67,7 +77,7 @@
       
               
             <div class="swiper-slide slide7">
-                <a href=><h1 class=mobileBtn>Sign up / Login</h1></a>
+                <a href=https://africanmarketplacels.herokuapp.com/auth/login><h1 class=mobileBtn>Sign up / Login</h1></a>
             </div>
           
        </div>

@@ -35,7 +35,7 @@ body{
 .slideInfo{
     background-color: black;
     opacity: 0.8;
-    border-bottom: 1px solid rgb(201, 154, 27);
+    border-bottom: 1px solid @Gold;
     display: flex;
     justify-content: center;
 }
@@ -49,40 +49,39 @@ body{
 }
 
 .Panel{
+    .displayflex(space-evenly,row);
     margin: auto;
     margin-top: 3rem;
     width: 80rem;
     height: 30rem;
     background-color: rgb(31, 31, 31);
     border-radius: 1rem;
-    display: flex;
     flex-direction: row;
     align-content: center;
-    justify-content: space-evenly;
     flex-wrap: wrap;
     border-top: 3px solid rgb(253, 231, 172);
-    border: 2px solid rgb(201, 154, 27);
+    border: 2px solid @Gold;
     border-bottom: 15px solid rgb(94, 72, 12);
 
-    @media(max-width:1300px){
+   @media@mediumHome{
         flex-direction: column;
         width: 40rem;
         height: 65rem;
         align-items: center;
-    }
+  }
 
-    @media(max-width:667px){
-        width: 80%;
+   @media(max-width:667px){
+        width: 20rem;
     }
     
-
+}
 
     .Info{
         width: 40rem;
         height: 25rem;
         
-        @media(max-width:1300px){
-            width: 38rem;
+        @media@mediumHome{
+            width: 36rem;
             margin-top: 2rem;
         }
         
@@ -92,7 +91,7 @@ body{
         }
         
     }
- }
+ 
 
  hr{
      border: 1px solid grey;

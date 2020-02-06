@@ -59,8 +59,8 @@ a {
   text-decoration: none;
 }
 .navWrapper {
+  width: 35rem;
   margin: auto;
-  width: 100%;
   background-color: #c99a1b;
   display: flex;
   flex-direction: row;
@@ -74,7 +74,6 @@ a {
 .navWrapper nav {
   width: 50rem;
   height: 2rem;
-  margin-left: 5%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -92,11 +91,13 @@ a {
   text-decoration: none;
   color: black;
   font-size: 1rem;
+  font-weight: bold;
   font-family: 'Syncopate', sans-serif;
 }
 .navWrapper nav a:hover {
   background-color: #f0bf3a;
   transition: background-color 1s;
+  margin-top: 0.5rem;
 }
 .mobileNav {
   width: 100%;
@@ -192,7 +193,7 @@ body {
 @media (max-width: 1300px) {
   .Panel {
     flex-direction: column;
-    width: 40rem;
+    width: 42rem;
     height: 65rem;
     align-items: center;
   }
@@ -206,7 +207,7 @@ body {
   width: 40rem;
   height: 25rem;
 }
-@media (max-width: 1300px) {
+@media (min-width: 1300px) {
   .Panel .Info {
     width: 38rem;
     margin-top: 2rem;
@@ -281,6 +282,8 @@ hr {
   margin: auto;
   width: 90%;
   background-image: url("../../img/code.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   background-attachment: fixed;
   border-radius: 1rem;
@@ -314,14 +317,15 @@ hr {
     margin-bottom: 5rem;
   }
 }
-.teamWrapper .teamMemberWrapper a {
-  width: 10rem;
-  text-decoration: none;
-}
 .teamWrapper .teamMemberWrapper .teamMember {
   width: 25;
   height: 60%;
   border-radius: 1rem;
+}
+#aboutGit {
+  width: 10rem;
+  height: 1rem;
+  text-decoration: none;
 }
 .git {
   font-size: 2rem;
@@ -335,7 +339,8 @@ hr {
   background-color: #c99a1b;
 }
 .git:hover {
-  background-color: #fdd35d;
+  background-color: #fdfdfd;
+  transform: rotate(-5deg);
   transition: background-color 1s;
 }
 img {

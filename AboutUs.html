@@ -28,7 +28,7 @@
             <nav>
                 <a href=index.html><i class=ion-home></i> Home</a>
                 <a href=AboutUs.html><i class=ion-android-people></i> About Us</a>
-                <a href=SignUp.html><i class=ion-mouse></i> Sign Up/login</a>
+                <a href=https://africanmarketplacels.herokuapp.com/auth/login><i class=ion-mouse></i> Sign Up/login</a>
             </nav>
         </div>
     </section>
@@ -60,51 +60,57 @@
 
      <div class=teamMemberWrapper>
         <h5>Web UI Developer <img src=../../img/Lambda.png class=lambda></h5>
+        <h5>Kirk Tolliver</h5>
         <div class="teamMember Kirk">
             <img src="../../img/Kirk.jpg" class="has-scroll-reveal animation fadeInUp">
         </div>
-        <a href=https://github.com/KalebJohnson target=blank><i class="ion-social-github git"></i></a>
+        <a id=aboutGit href=https://github.com/KalebJohnson target=blank><i class="ion-social-github git"></i></a>
     </div>
 
     <div class=teamMemberWrapper>
         <h5>Web UI Developer <img src=../../img/Lambda.png class=lambda></h5>
+        <h5>Kaleb Johnson</h5>
          <div class="teamMember Me">
             <img src="../../img/Me.jpg" class="has-scroll-reveal animation fadeInUp">
         </div>
-        <a href=https://github.com/makeTaller target=blank><i class="ion-social-github git"></i></a>
+        <a id=aboutGit href=https://github.com/makeTaller target=blank><i class="ion-social-github git"></i></a>
     </div>
 
     <div class=teamMemberWrapper>
         <h5>Web UI Developer <img src=../../img/Lambda.png class=lambda></h5>
+        <h5>Ahmadwali Sayadi</h5>
         <div class="teamMember Ahmad">
             <img src="../../img/Ahmad.jpg" class="has-scroll-reveal animation fadeInUp">
          </div>
-         <a href=https://github.com/SayadiFWD target=blank><i class="ion-social-github git"></i></a>
+         <a id=aboutGit href=https://github.com/SayadiFWD target=blank><i class="ion-social-github git"></i></a>
     </div>
 
 
     <div class=teamMemberWrapper>
         <h5>Front End Developer <img src=../../img/Lambda.png class=lambda></h5>
+        <h5>Leon Chisum</h5>
         <div class="teamMember Leon">
             <img src="../../img/Leon.jpg" class="has-scroll-reveal animation fadeInUp">
         </div>
-        <a href=https://github.com/LeonChisum target=blank><i class="ion-social-github git"></i></a>
+        <a id=aboutGit href=https://github.com/LeonChisum target=blank><i class="ion-social-github git"></i></a>
     </div>
 
     <div class=teamMemberWrapper>
         <h5>Front End Developer <img src=../../img/Lambda.png class=lambda></h5>
+        <h5>Reginald Miller</h5>
         <div class="teamMember Reg">
             <img src="../../img/Reg.png" class="has-scroll-reveal animation fadeInUp">
         </div>
-        <a href=https://github.com/Regbmiller target=blank><i class="ion-social-github git"></i></a>
+        <a id=aboutGit href=https://github.com/Regbmiller target=blank><i class="ion-social-github git"></i></a>
     </div>
 
     <div class=teamMemberWrapper>
         <h5>Back End Developer <img src=../../img/Lambda.png class=lambda></h5>
+        <h5>Aaron Spurgeon</h5>
         <div class="teamMember Aaron">
             <img src="../../img/Aaron.jpg" class="has-scroll-reveal animation fadeInUp">
         </div>
-        <a href=https://github.com/aaronspurgeon target=blank><i class="ion-social-github git"></i></a>
+        <a id=aboutGit href=https://github.com/aaronspurgeon target=blank><i class="ion-social-github git"></i></a>
  
 </section>
 
@@ -113,31 +119,31 @@
     jQuery(document).ready( function($) {
         var revealClass = '.animated';
         var targetClass = '.has-scroll-reveal:not(' + revealClass + ')';
-        var offset = 50; // Offset from bottom of viewport in pixels.
+        var offset = 50; 
     
         var winHeight = $(window).height();
     
-        // Recalc height of window in case of resize
+
         $(window).bind('resizeEnd', function() {
           winHeight = $(window).height();
         });
     
-        // Fire when page loads
+
         triggerAnimation(revealClass, targetClass, offset, winHeight);
     
-        // Also fire on scroll
+
         $(window).on('scroll', function() {
             triggerAnimation(revealClass, targetClass, offset, winHeight);
-        }); // window.on('scroll')
+        });
     
-    }); // document.ready
+    }); 
     
     function triggerAnimation(revealClass, targetClass, offset, winHeight) {
     
-          // Get current scrollPos
+
           var trigger = $(window).scrollTop() + winHeight - offset;
     
-          // Loop through elements we're affecting
+
           $(targetClass).each(function() {
             var elementOffset = $(this).offset().top;
     
@@ -149,14 +155,7 @@
     
     }
     
-    /*
-     * ResizeEnd
-     *
-     * Example:
-     * $(window).bind('resizeEnd', function() {
-     *  console.log('resize ended 500ms ago');
-     * });
-     */
+
     $(window).resize(function() {
     
         if(this.resizeTO) clearTimeout(this.resizeTO);

@@ -1,54 +1,49 @@
 .navWrapper{
+    .displayflex(space-between,row);
+    width: 35rem;
     margin: auto;
-    width: 100%;
-    background-color: rgb(201, 154, 27);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    background-color: @gold;
 
-    @media(max-width:500px){
+    @media@phone{
         display:none;
     }
     
 
     nav{
+        .displayflex(space-evenly,row);
         width: 50rem;
         height: 2rem;
-        margin-left: 5%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
         
 
         a{
+            .displayflex(center, row);
             border-left: 1px solid black;
             border-right: 1px solid black;
             height: 2rem;
             align-items: center;
             align-content: center;
             width: 100%;
-            display: flex;
-            justify-content: center;
             text-decoration: none;
             color: black;
             font-size: 1rem;
+            font-weight: bold;
             font-family: 'Syncopate', sans-serif;
             &:hover{
-                background-color: rgb(240, 191, 58);
+                background-color: @gold;
                 transition: background-color 1s;
+                margin-top: .5rem;
             }
         }
     }
-}
+
 
 .mobileNav{
     width: 100%;
     height: 5rem;
-    background-color: rgb(201, 154, 27);
+    background-color: @gold;
     display: flex;
 
-    @media(min-width:550px){
+    @media@phoneCutOut{
         display: none;
     }
 
@@ -67,9 +62,9 @@
 }
 
 .underNav{
+    .displayflex(space-evenly,row);
     height: 8rem;
     background-color: rgb(31, 31, 31);
-    display: flex;
-    justify-content: space-evenly;
     align-items: center;
+}
 }

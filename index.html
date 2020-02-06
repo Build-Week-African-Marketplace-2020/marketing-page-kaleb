@@ -24,6 +24,15 @@
 </head>
 <body>
 
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    
+      <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
 
 
     <section class=topSection>
@@ -31,7 +40,7 @@
             <nav>
                 <a href=index.html><i class=ion-home></i> Home</a>
                 <a href=AboutUs.html><i class=ion-android-people></i> About Us</a>
-                <a href=SignUp.html><i class=ion-mouse></i> Sign Up/login</a>
+                <a href=https://africanmarketplacels.herokuapp.com/auth/login><i class=ion-mouse></i> Sign Up/login</a>
             </nav>
         </div>
     </section>
@@ -48,11 +57,11 @@
     <div class=underNav>
         <h2 class="has-scroll-reveal animation fadeInUp"> Marketing App</h2>
     </div>
-    <!-- Slider main container -->
+    
 <div class="swiper-container">
-    <!-- Additional required wrapper -->
+    
     <div class="swiper-wrapper">
-        <!-- Slides -->
+        
         <div class="swiper-slide slide1">
             <div class=slideInfo>
                 <h2>"Grow With Us"</h2>
@@ -69,14 +78,14 @@
         </div>
     </div>
     </div>
-    <!-- If we need pagination -->
+    
     <div class="swiper-pagination"></div>
 
-    <!-- If we need navigation buttons -->
+    
     <div class="swiper-button-prev btn1"></div>
     <div class="swiper-button-next btn2"></div>
 
-    <!-- If we need scrollbar -->
+    
     <div class="swiper-scrollbar"></div>
 </div>
     
@@ -146,12 +155,8 @@
     autoplay: {
     delay: 3000,
   },
-    // Optional parameters
     direction: 'horizontal',
     loop: true,
-
-
-    // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
@@ -164,31 +169,31 @@
     jQuery(document).ready( function($) {
         var revealClass = '.animated';
         var targetClass = '.has-scroll-reveal:not(' + revealClass + ')';
-        var offset = 50; // Offset from bottom of viewport in pixels.
+        var offset = 50; 
     
         var winHeight = $(window).height();
     
-        // Recalc height of window in case of resize
+
         $(window).bind('resizeEnd', function() {
           winHeight = $(window).height();
         });
     
-        // Fire when page loads
+        
         triggerAnimation(revealClass, targetClass, offset, winHeight);
     
-        // Also fire on scroll
+        
         $(window).on('scroll', function() {
             triggerAnimation(revealClass, targetClass, offset, winHeight);
-        }); // window.on('scroll')
+        });
     
-    }); // document.ready
+    }); 
     
     function triggerAnimation(revealClass, targetClass, offset, winHeight) {
     
-          // Get current scrollPos
+       
           var trigger = $(window).scrollTop() + winHeight - offset;
     
-          // Loop through elements we're affecting
+         
           $(targetClass).each(function() {
             var elementOffset = $(this).offset().top;
     
@@ -200,14 +205,7 @@
     
     }
     
-    /*
-     * ResizeEnd
-     *
-     * Example:
-     * $(window).bind('resizeEnd', function() {
-     *  console.log('resize ended 500ms ago');
-     * });
-     */
+
     $(window).resize(function() {
     
         if(this.resizeTO) clearTimeout(this.resizeTO);
