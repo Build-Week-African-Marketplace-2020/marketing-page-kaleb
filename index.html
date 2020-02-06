@@ -9,45 +9,65 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="path/to/swiper.min.css">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
     <link href= http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css rel=stylesheet>
-
-    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100|Prata|Syncopate&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Syncopate&display=swap" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
-    <title>Document</title>
+
 </head>
 <body>
 
-    <script src="path/to/swiper.min.js"></script>
-<div class=intro>
-    <div class=title>
-        <h1>African Marketplace</h1>
-    </div>
-</div>
+
 
     <section class=topSection>
         <div class=navWrapper>
             <nav>
                 <a href=index.html><i class=ion-home></i> Home</a>
                 <a href=AboutUs.html><i class=ion-android-people></i> About Us</a>
-                <a href=SignUp.html><i class=ion-mouse></i> Sign Up</a>
-                <a href=LogIn.html><i class=ion-android-star-half></i>Log In</a>
+                <a href=SignUp.html><i class=ion-mouse></i> Sign Up/login</a>
             </nav>
         </div>
     </section>
 
+    <section class=mobileNav>
+        <div class=navReturn>
+           <a href=navBox.html> <hr class=navDash></a>
+           <a href=navBox.html> <hr class=navDash></a>
+           <a href=navBox.html> <hr class=navDash></a>
+        </div>
+
+    </section>
+
+    <div class=underNav>
+        <h2 class="has-scroll-reveal animation fadeInUp"> Marketing App</h2>
+    </div>
     <!-- Slider main container -->
 <div class="swiper-container">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide slide1">Slide 1</div>
-        <div class="swiper-slide slide2">Slide 2</div>
-        <div class="swiper-slide slide3">Slide 3</div>
-        ...
+        <div class="swiper-slide slide1">
+            <div class=slideInfo>
+                <h2>"Grow With Us"</h2>
+            </div>
+        </div>
+    <div class="swiper-slide slide2">
+        <div class=slideInfo>
+            <h2>"Expand Economically"</h2>
+        </div>
+    </div>    
+    <div class="swiper-slide slide3">
+        <div class=slideInfo>
+            <h2>"Dynamic Trading"</h2>
+        </div>
+    </div>
     </div>
     <!-- If we need pagination -->
     <div class="swiper-pagination"></div>
@@ -61,12 +81,15 @@
 </div>
     
     <div class=Panel>
-        <div class="midInfoImg">
+        <div class="midInfoImg" id=midImg1>
             
         </div>
         <div class=Info>
-            <p>Blah blah Blah blah Blah blah Blah blah</p>
-            <p>Blah blah Blah blah Blah blah Blah blah</p>
+            <h2 class="has-scroll-reveal animation fadeInUp">
+                The Application that gives you opportunity
+            </h2>
+            <hr>
+            <p class="has-scroll-reveal animation fadeInUp">Start your economic adventure the right way. This application will change your local business dynamic for the good, by opening up opportunities with other consumers and traders you didn't know existed!</p>
         </div>
 
 
@@ -74,27 +97,40 @@
 
     <div class=Panel>
         <div class=Info>
-            <p>Blah blah Blah blah Blah blah Blah blah</p>
-            <p>Blah blah Blah blah Blah blah Blah blah</p>
+            <h2 class="has-scroll-reveal animation fadeInUp">
+                Expand, Trade, and Grow
+            </h2>
+            <hr>
+            <p class="has-scroll-reveal animation fadeInUp">This alone provides a marketplace for the sale of goods for anyone, also providing a platform with technology, accessibility, with a quick interface to allow business owners to easily view the local economy.</p>
         </div>
-        <div class="midInfoImg">
+        <div class="midInfoImg" id=midImg2>
             
         </div>
 
     </div>
 
     <div class=Panel>
-        <div class="midInfoImg">
+        <div class="midInfoImg" id=midImg3>
             
         </div>
         <div class=Info>
-            <p>Blah blah Blah blah Blah blah Blah blah</p>
-            <p>Blah blah Blah blah Blah blah Blah blah</p>
+            <h2 class="has-scroll-reveal animation fadeInUp">
+                Rise above primitive trade strategy
+            </h2>
+            <hr>
+            <p class="has-scroll-reveal animation fadeInUp">Fliers? billboards? forget it, rise above primitive business strategies that waste money with the potential to not even engage with consumers! This app offers higher engagement percentages, cause other users are there to trade as well!</p>
         </div>
 
 
     </div>
 
+
+    <footer>
+        <h5>
+        
+        </h5>
+
+    </footer>
 
 
 
@@ -102,23 +138,87 @@
     <script>
         var mySwiper = new Swiper ('.swiper-container', {
             effect: 'coverflow',
+            effect: 'fade',
     speed: 2000,
-    grabCursor: true,
-    coverFlowEffect: {
-      rotate:30,
-      slideShadows: false,
-    },
+    fadeEffect: {
+    crossFade: true
+  },
     autoplay: {
     delay: 3000,
-    },
+  },
+    // Optional parameters
     direction: 'horizontal',
     loop: true,
+
+
+    // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev'
     }
   })
     </script>
+
+<script>
+ 
+    jQuery(document).ready( function($) {
+        var revealClass = '.animated';
+        var targetClass = '.has-scroll-reveal:not(' + revealClass + ')';
+        var offset = 50; // Offset from bottom of viewport in pixels.
+    
+        var winHeight = $(window).height();
+    
+        // Recalc height of window in case of resize
+        $(window).bind('resizeEnd', function() {
+          winHeight = $(window).height();
+        });
+    
+        // Fire when page loads
+        triggerAnimation(revealClass, targetClass, offset, winHeight);
+    
+        // Also fire on scroll
+        $(window).on('scroll', function() {
+            triggerAnimation(revealClass, targetClass, offset, winHeight);
+        }); // window.on('scroll')
+    
+    }); // document.ready
+    
+    function triggerAnimation(revealClass, targetClass, offset, winHeight) {
+    
+          // Get current scrollPos
+          var trigger = $(window).scrollTop() + winHeight - offset;
+    
+          // Loop through elements we're affecting
+          $(targetClass).each(function() {
+            var elementOffset = $(this).offset().top;
+    
+            if( elementOffset < trigger ) {
+    
+              $(this).addClass( revealClass.replace('.','') );
+            }
+          });
+    
+    }
+    
+    /*
+     * ResizeEnd
+     *
+     * Example:
+     * $(window).bind('resizeEnd', function() {
+     *  console.log('resize ended 500ms ago');
+     * });
+     */
+    $(window).resize(function() {
+    
+        if(this.resizeTO) clearTimeout(this.resizeTO);
+    
+        this.resizeTO = setTimeout(function() {
+            $(this).trigger('resizeEnd');
+        }, 500);
+    
+    });
+    
+     </script>
 
 </body>
 </html>

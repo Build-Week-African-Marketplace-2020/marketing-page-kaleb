@@ -1,0 +1,113 @@
+<!doctype html>
+
+<html lang="en">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<head class=intro>
+
+  <meta 
+  name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+<meta charset="utf-8">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+
+
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+
+
+</head>
+
+
+
+<link href= http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css rel=stylesheet>
+<link href="https://fonts.googleapis.com/css?family=Lato:100|Prata|Syncopate&display=swap" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+
+
+
+
+</head>
+
+<body id=navBoxBody>
+
+    <div class=mobileHead>
+
+    </div>
+
+    <div class="swiper-container2">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide slide4">
+                <div class= mobileIntro>
+                  <h2 class=introTitle>Welcome</h2>
+                  <p>Congratulations on starting your economic adventure with us!
+                  </p>
+
+                  <p>Swipe left or right to begin.</p>
+                </div>
+      
+      
+      
+      
+            </div>
+           <div class="swiper-slide slide5">
+            <a href=index.html><h1 class=mobileBtn>Home</h1></a>
+           </div>
+      
+           <div class="swiper-slide slide6">
+              <a href=AboutUs.html><h1 class=mobileBtn>About Us</h1></a>
+           </div>
+      
+              
+            <div class="swiper-slide slide7">
+                <a href=><h1 class=mobileBtn>Sign up / Login</h1></a>
+            </div>
+          
+       </div>
+      
+       <footer class=mobileFooter> </footer>
+      
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev swiper-button-white"></div>
+      <div class="swiper-button-next swiper-button-white"></div>
+      </div>
+
+
+      <script>
+        var mySwiper = new Swiper ('.swiper-container2', {
+          effect: 'cube',
+          speed: 500,
+          grabCursor: true,
+          cubeEffect: {
+            shadow: true,
+            shadowOffset: 20,
+            shadowScale: 0.94,
+            slideShadows: true,
+        },
+          autoplay: {
+          delay: 3000,
+        },
+          // Optional parameters
+          direction: 'horizontal',
+          loop: true,
+      
+      
+          // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+          }
+        })
+        </script>
+
+
+
+</body>
+

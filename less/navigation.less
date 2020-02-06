@@ -1,33 +1,75 @@
 .navWrapper{
     margin: auto;
-    width: 60%;
-    background-color: black;
-    opacity: 0.8;
+    width: 100%;
+    background-color: rgb(201, 154, 27);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
+    @media(max-width:500px){
+        display:none;
+    }
+    
+
     nav{
-        width: 100%;
+        width: 50rem;
+        height: 2rem;
+        margin-left: 5%;
         display: flex;
         flex-direction: row;
+        align-items: center;
         justify-content: space-evenly;
+        
 
         a{
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            height: 2rem;
+            align-items: center;
+            align-content: center;
             width: 100%;
             display: flex;
             justify-content: center;
             text-decoration: none;
-            color: white;
-            padding-bottom: 1%;
-            font-size: 1.4rem;
+            color: black;
+            font-size: 1rem;
+            font-family: 'Syncopate', sans-serif;
             &:hover{
-                background-color: grey;
+                background-color: rgb(240, 191, 58);
                 transition: background-color 1s;
-                border-left: 1px solid white;
-                border-right: 1px solid white;
             }
         }
     }
 }
 
+.mobileNav{
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(201, 154, 27);
+    display: flex;
+
+    @media(min-width:550px){
+        display: none;
+    }
+
+    .navReturn{
+        width: 3rem;
+        height: 5rem;
+        margin: 1rem;
+
+        .navDash{
+            border: solid 3px rgb(39, 39, 39);
+            border-radius: 1rem;
+        }
+
+    }
+
+}
+
+.underNav{
+    height: 8rem;
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
