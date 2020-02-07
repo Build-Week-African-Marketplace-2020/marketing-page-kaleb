@@ -200,7 +200,7 @@ body {
 }
 @media (max-width: 667px) {
   .Panel {
-    width: 80%;
+    width: 90%;
   }
 }
 .Panel .Info {
